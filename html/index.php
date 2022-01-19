@@ -6,7 +6,7 @@ if(isset($_SESSION['userid'])) {
     $link = '<a href="logout.php">ログアウト</a>';
 }else{
     $msg = 'ログインしていません。';
-    $link = '<a href="login.php">ログイン</a>';
+    $link = '<a href="login_form.php">ログイン</a>';
 }
 ?>
 <h1><?php echo $msg; ?></h1>

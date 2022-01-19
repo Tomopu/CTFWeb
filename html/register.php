@@ -2,8 +2,8 @@
 $userid = $_POST['userid'];
 $passwd = $_POST['passwd'];
 // データベースの設定
-$dsn = "mysql:host=localhost; dbname=hogehoge, charset=utf8";
-$username = "hogehoge";
+$dsn = "mysql:host=localhost; dbname=user_table; charset=utf8";
+$username = "admin";
 $password = "hogehoge";
 try {
     $dbh = new PDO($dsn, $username, $password);

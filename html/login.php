@@ -1,8 +1,8 @@
 <?php
 session_start();
 $userid = $_POST['userid'];
-$dsn = "mysql:host=localhost; dbname=hogehoge; charset=utf8";
-$username = "hogehoge";
+$dsn = "mysql:host=localhost; dbname=user_table; charset=utf8";
+$username = "admin";
 $password = "hogehoge";
 try {
     $dbh = new PDO($dsn, $username, $password);
@@ -22,7 +22,7 @@ if(password_verify($_POST['passwd'], $member['passwd'])) {
     $link = '<a href="index.php">ホーム</a>';
 } else {
     $msg = 'メールアドレスもしくはパスワードが間違っています。';
-    $link = '<a href="login.php">戻る</a>';
+    $link = '<a href="login_form.php">戻る</a>';
 }
 ?>
 
