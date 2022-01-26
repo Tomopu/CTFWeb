@@ -10,4 +10,11 @@
     </div>
     <input type="submit" value="ログイン">
 </form>
+<?php
+if(isset($_GET['msg'])){
+    echo '<p style="color:red">';
+    echo $_GET['msg'];
+    echo '</p>';
+}
+?>
 <p><a href="signup.php">新規登録</a></p>

@@ -8,7 +8,7 @@ services:
       ports:
          - 8080:80
       container_name: myweb
-   mysql:
+   mydb:
       image: mysql:latest
       volumes:
          - ./mysql:/var/lib/mysql
@@ -20,5 +20,5 @@ services:
          - MYSQL_PASSWORD=hogehoge
       ports:
          - 3306:3306
-      container_name: mysql
+      container_name: mydb
 
